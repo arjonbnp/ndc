@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Political Crime Database (PCD)</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <h1>Political Crime Database</h1>
+
+  <!-- নতুন কেস যুক্ত করার ফর্ম -->
+  <form id="crimeForm">
+    <input type="text" id="caseId" placeholder="Case ID" required />
+    <input type="text" id="crimeType" placeholder="Type" required />
+    <input type="text" id="location" placeholder="Location" required />
+    <input type="date" id="date" required />
+    <input type="text" id="description" placeholder="Description" required />
+    <button type="submit">Add Case</button>
+  </form>
+
+  <br />
+  <input type="text" id="searchInput" placeholder="Search by location, type..." />
+
+  <table id="crimeTable">
+    <thead>
+      <tr>
+        <th>Case ID</th>
+        <th>Type</th>
+        <th>Location</th>
+        <th>Date</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <!-- Data dynamically added -->
+    </tbody>
+  </table>
+
+  <script src="script.js"></script>
+</body>
+</html>
